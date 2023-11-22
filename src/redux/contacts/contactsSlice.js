@@ -17,14 +17,14 @@ const contactsSlice = createSlice({
       reducer(state, { payload }) {
         state.contacts = [...state.contacts, payload];
       },
-      prepare(newContact) {
-        return {
-          payload: {
-            ...newContact,
-            id: nanoid(),
-          },
-        };
-      },
+      // prepare(newContact) {
+      //   return {
+      //     payload: {
+      //       ...newContact,
+      //       id: nanoid(),
+      //     },
+      //   };
+      // },
     },
 
     deleteContacts(state, { payload }) {
